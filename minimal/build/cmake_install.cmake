@@ -1,4 +1,4 @@
-# Install script for directory: /Users/bennyblues/Documents/Geant4_Tutorial/minimal
+# Install script for directory: /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/minimal")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/minimal")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/minimal" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/minimal")
     execute_process(COMMAND /usr/bin/install_name_tool
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -22,14 +22,14 @@
 // * use  in  resulting  scientific  publications,  and indicate your *
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
-// 
+//
 //
 //
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #ifndef DetectorConstruction_h
 #define DetectorConstruction_h 1
-#endif
+
 
 #include "G4VUserDetectorConstruction.hh"
 
@@ -44,11 +44,16 @@
 class DetectorConstruction : public G4VUserDetectorConstruction
 {
 public:
-    
+
     DetectorConstruction();
     ~DetectorConstruction();
 
-    G4VPhysicalVolume* Construct();
+    virtual G4VPhysicalVolume* Construct();
+    virtual
+
     void ConstructSDandField();
+
+    G4bool fCheckOverlaps;
 };
 
+#endif

@@ -24,24 +24,17 @@
 // ********************************************************************
 //
 //
-//
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+/// \file B4Analysis.hh
+/// \brief Selection of the analysis technology
 
-#ifndef UserActionInitialization_h
-#define UserActionInitialization_h 1
+#ifndef Analysis_h
+#define Analysis_h 1
 
-#include "G4VUserActionInitialization.hh"
+#include "g4root.hh"
+//#include "g4csv.hh"
+//#include "g4xml.hh"
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-class UserActionInitialization : public G4VUserActionInitialization {
-public:
-    UserActionInitialization();
-    virtual ~UserActionInitialization();
-    virtual void Build() const;
-    virtual void BuildForMaster() const;
-};
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+//#include "G4GenericAnalysisManager.hh"
+//using G4AnalysisManager = G4GenericAnalysisManager;
 
 #endif

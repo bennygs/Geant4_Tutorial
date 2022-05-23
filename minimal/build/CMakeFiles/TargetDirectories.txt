@@ -1,7 +1,7 @@
-/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles/minimal.dir
-/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles/edit_cache.dir
-/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles/rebuild_cache.dir
-/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles/list_install_components.dir
-/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles/install.dir
-/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles/install/local.dir
-/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles/install/strip.dir
+/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles/minimal.dir
+/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles/edit_cache.dir
+/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles/rebuild_cache.dir
+/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles/list_install_components.dir
+/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles/install.dir
+/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles/install/local.dir
+/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles/install/strip.dir

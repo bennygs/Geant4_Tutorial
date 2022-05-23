@@ -24,22 +24,42 @@
 // ********************************************************************
 //
 //
-//
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+/// \file B4dEventAction.hh
+/// \brief Definition of the B4dEventAction class
 
-#ifndef UserActionInitialization_h
-#define UserActionInitialization_h 1
+#ifndef EventAction_h
+#define EventAction_h 1
 
-#include "G4VUserActionInitialization.hh"
+#include "G4UserEventAction.hh"
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+#include "G4THitsMap.hh"
+#include "globals.hh"
 
-class UserActionInitialization : public G4VUserActionInitialization {
+/// Event action class
+///
+/// In EndOfEventAction(), it prints the accumulated quantities of the energy
+/// deposit and track lengths of charged particles in Absober and Gap layers
+/// stored in the hits collections.
+
+class EventAction : public G4UserEventAction
+{
 public:
-    UserActionInitialization();
-    virtual ~UserActionInitialization();
-    virtual void Build() const;
-    virtual void BuildForMaster() const;
+  EventAction();
+  virtual ~EventAction();
+
+  virtual void  BeginOfEventAction(const G4Event* event);
+  virtual void    EndOfEventAction(const G4Event* event);
+
+private:
+  // methods
+  G4THitsMap<G4double>* GetHitsCollection(G4int hcID,
+                                          const G4Event* event) const;
+  G4double GetSum(G4THitsMap<G4double>* hitsMap) const;
+  void PrintEventStatistics(G4double cryEdep, G4double cryTrackLength) const;
+
+  // data members
+  G4int  fCryEdepHCID;
+  G4int  fCryTrackLengthHCID;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

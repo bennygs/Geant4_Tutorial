@@ -1,5 +1,5 @@
 CMakeFiles/minimal.dir/minimal.cc.o: \
-  /Users/bennyblues/Documents/Geant4_Tutorial/minimal/minimal.cc \
+  /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/minimal.cc \
   /usr/local/include/Geant4/G4MTRunManager.hh \
   /usr/local/include/Geant4/G4MTBarrier.hh \
   /usr/local/include/Geant4/G4Threading.hh \
@@ -515,9 +515,9 @@ CMakeFiles/minimal.dir/minimal.cc.o: \
   /usr/local/include/Geant4/icomsdefs.hh \
   /usr/local/include/Geant4/G4VStateDependent.hh \
   /usr/local/include/Geant4/G4UIcommandStatus.hh \
-  /Users/bennyblues/Documents/Geant4_Tutorial/minimal/include/DetectorConstruction.hh \
+  /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/include/DetectorConstruction.hh \
   /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
-  /Users/bennyblues/Documents/Geant4_Tutorial/minimal/include/UserActionInitialization.hh \
+  /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/include/UserActionInitialization.hh \
   /usr/local/include/Geant4/G4VUserActionInitialization.hh \
   /usr/local/include/Geant4/G4VisExecutive.hh \
   /usr/local/include/Geant4/G4VisManager.hh \

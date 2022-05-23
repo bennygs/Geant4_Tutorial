@@ -29,34 +29,41 @@
 
 #include "UserActionInitialization.hh"
 #include "PrimaryGeneratorAction.hh"
+#include "RunAction.hh"
+#include "EventAction.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 UserActionInitialization::UserActionInitialization()
+ : G4VUserActionInitialization()
 {
 
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-UserActionInitialization::~UserActionInitialization() 
+UserActionInitialization::~UserActionInitialization()
 {
 
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void UserActionInitialization::Build() const 
+void UserActionInitialization::BuildForMaster() const
 {
-    SetUserAction(new PrimaryGeneratorAction());
+  SetUserAction(new RunAction);
+  //SetUserAction(new PrimaryGeneratorAction());
+  //SetUserAction(new EventAction);
+}
+
+void UserActionInitialization::Build() const
+{
+  SetUserAction(new PrimaryGeneratorAction);
+  SetUserAction(new RunAction);
+  SetUserAction(new EventAction);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo....
 
-void UserActionInitialization::BuildForMaster() const 
-{
-
-}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo....
-

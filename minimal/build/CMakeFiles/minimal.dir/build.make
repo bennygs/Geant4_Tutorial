@@ -53,10 +53,10 @@ RM = /opt/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bennyblues/Documents/Geant4_Tutorial/minimal
+CMAKE_SOURCE_DIR = /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bennyblues/Documents/Geant4_Tutorial/minimal/build
+CMAKE_BINARY_DIR = /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/minimal.dir/depend.make
@@ -72,64 +72,94 @@ include CMakeFiles/minimal.dir/flags.make
 CMakeFiles/minimal.dir/minimal.cc.o: CMakeFiles/minimal.dir/flags.make
 CMakeFiles/minimal.dir/minimal.cc.o: ../minimal.cc
 CMakeFiles/minimal.dir/minimal.cc.o: CMakeFiles/minimal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minimal.dir/minimal.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/minimal.cc.o -MF CMakeFiles/minimal.dir/minimal.cc.o.d -o CMakeFiles/minimal.dir/minimal.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/minimal/minimal.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minimal.dir/minimal.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/minimal.cc.o -MF CMakeFiles/minimal.dir/minimal.cc.o.d -o CMakeFiles/minimal.dir/minimal.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/minimal.cc
 
 CMakeFiles/minimal.dir/minimal.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimal.dir/minimal.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/minimal/minimal.cc > CMakeFiles/minimal.dir/minimal.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/minimal.cc > CMakeFiles/minimal.dir/minimal.cc.i
 
 CMakeFiles/minimal.dir/minimal.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimal.dir/minimal.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/minimal/minimal.cc -o CMakeFiles/minimal.dir/minimal.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/minimal.cc -o CMakeFiles/minimal.dir/minimal.cc.s
 
 CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o: CMakeFiles/minimal.dir/flags.make
 CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc
 CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o: CMakeFiles/minimal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/DetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/DetectorConstruction.cc
 
 CMakeFiles/minimal.dir/src/DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimal.dir/src/DetectorConstruction.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/DetectorConstruction.cc > CMakeFiles/minimal.dir/src/DetectorConstruction.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/DetectorConstruction.cc > CMakeFiles/minimal.dir/src/DetectorConstruction.cc.i
 
 CMakeFiles/minimal.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimal.dir/src/DetectorConstruction.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/DetectorConstruction.cc -o CMakeFiles/minimal.dir/src/DetectorConstruction.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/DetectorConstruction.cc -o CMakeFiles/minimal.dir/src/DetectorConstruction.cc.s
+
+CMakeFiles/minimal.dir/src/EventAction.cc.o: CMakeFiles/minimal.dir/flags.make
+CMakeFiles/minimal.dir/src/EventAction.cc.o: ../src/EventAction.cc
+CMakeFiles/minimal.dir/src/EventAction.cc.o: CMakeFiles/minimal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minimal.dir/src/EventAction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/src/EventAction.cc.o -MF CMakeFiles/minimal.dir/src/EventAction.cc.o.d -o CMakeFiles/minimal.dir/src/EventAction.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/EventAction.cc
+
+CMakeFiles/minimal.dir/src/EventAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimal.dir/src/EventAction.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/EventAction.cc > CMakeFiles/minimal.dir/src/EventAction.cc.i
+
+CMakeFiles/minimal.dir/src/EventAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimal.dir/src/EventAction.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/EventAction.cc -o CMakeFiles/minimal.dir/src/EventAction.cc.s
 
 CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/minimal.dir/flags.make
 CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
 CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/minimal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/PrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/PrimaryGeneratorAction.cc > CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/PrimaryGeneratorAction.cc > CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.i
 
 CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/PrimaryGeneratorAction.cc -o CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/PrimaryGeneratorAction.cc -o CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.s
+
+CMakeFiles/minimal.dir/src/RunAction.cc.o: CMakeFiles/minimal.dir/flags.make
+CMakeFiles/minimal.dir/src/RunAction.cc.o: ../src/RunAction.cc
+CMakeFiles/minimal.dir/src/RunAction.cc.o: CMakeFiles/minimal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/minimal.dir/src/RunAction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/src/RunAction.cc.o -MF CMakeFiles/minimal.dir/src/RunAction.cc.o.d -o CMakeFiles/minimal.dir/src/RunAction.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/RunAction.cc
+
+CMakeFiles/minimal.dir/src/RunAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimal.dir/src/RunAction.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/RunAction.cc > CMakeFiles/minimal.dir/src/RunAction.cc.i
+
+CMakeFiles/minimal.dir/src/RunAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimal.dir/src/RunAction.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/RunAction.cc -o CMakeFiles/minimal.dir/src/RunAction.cc.s
 
 CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o: CMakeFiles/minimal.dir/flags.make
 CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o: ../src/UserActionInitialization.cc
 CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o: CMakeFiles/minimal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o -MF CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o.d -o CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/UserActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o -MF CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o.d -o CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o -c /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/UserActionInitialization.cc
 
 CMakeFiles/minimal.dir/src/UserActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimal.dir/src/UserActionInitialization.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/UserActionInitialization.cc > CMakeFiles/minimal.dir/src/UserActionInitialization.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/UserActionInitialization.cc > CMakeFiles/minimal.dir/src/UserActionInitialization.cc.i
 
 CMakeFiles/minimal.dir/src/UserActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimal.dir/src/UserActionInitialization.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/UserActionInitialization.cc -o CMakeFiles/minimal.dir/src/UserActionInitialization.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/UserActionInitialization.cc -o CMakeFiles/minimal.dir/src/UserActionInitialization.cc.s
 
 # Object files for target minimal
 minimal_OBJECTS = \
 "CMakeFiles/minimal.dir/minimal.cc.o" \
 "CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o" \
+"CMakeFiles/minimal.dir/src/EventAction.cc.o" \
 "CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o" \
+"CMakeFiles/minimal.dir/src/RunAction.cc.o" \
 "CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o"
 
 # External object files for target minimal
@@ -137,7 +167,9 @@ minimal_EXTERNAL_OBJECTS =
 
 minimal: CMakeFiles/minimal.dir/minimal.cc.o
 minimal: CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o
+minimal: CMakeFiles/minimal.dir/src/EventAction.cc.o
 minimal: CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o
+minimal: CMakeFiles/minimal.dir/src/RunAction.cc.o
 minimal: CMakeFiles/minimal.dir/src/UserActionInitialization.cc.o
 minimal: CMakeFiles/minimal.dir/build.make
 minimal: /usr/local/lib/libG4Tree.dylib
@@ -189,7 +221,7 @@ minimal: /usr/local/lib/libG4global.dylib
 minimal: /usr/local/lib/libG4clhep.dylib
 minimal: /usr/local/lib/libG4ptl.0.0.2.dylib
 minimal: CMakeFiles/minimal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable minimal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable minimal"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minimal.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -201,6 +233,6 @@ CMakeFiles/minimal.dir/clean:
 .PHONY : CMakeFiles/minimal.dir/clean
 
 CMakeFiles/minimal.dir/depend:
-	cd /Users/bennyblues/Documents/Geant4_Tutorial/minimal/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bennyblues/Documents/Geant4_Tutorial/minimal /Users/bennyblues/Documents/Geant4_Tutorial/minimal /Users/bennyblues/Documents/Geant4_Tutorial/minimal/build /Users/bennyblues/Documents/Geant4_Tutorial/minimal/build /Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles/minimal.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles/minimal.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/minimal.dir/depend
 

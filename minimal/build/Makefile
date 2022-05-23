@@ -57,10 +57,10 @@ RM = /opt/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bennyblues/Documents/Geant4_Tutorial/minimal
+CMAKE_SOURCE_DIR = /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bennyblues/Documents/Geant4_Tutorial/minimal/build
+CMAKE_BINARY_DIR = /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles /Users/bennyblues/Documents/Geant4_Tutorial/minimal/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bennyblues/Documents/Geant4_Tutorial/minimal/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -222,6 +222,30 @@ src/DetectorConstruction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal.dir/build.make CMakeFiles/minimal.dir/src/DetectorConstruction.cc.s
 .PHONY : src/DetectorConstruction.cc.s
 
+src/EventAction.o: src/EventAction.cc.o
+.PHONY : src/EventAction.o
+
+# target to build an object file
+src/EventAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal.dir/build.make CMakeFiles/minimal.dir/src/EventAction.cc.o
+.PHONY : src/EventAction.cc.o
+
+src/EventAction.i: src/EventAction.cc.i
+.PHONY : src/EventAction.i
+
+# target to preprocess a source file
+src/EventAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal.dir/build.make CMakeFiles/minimal.dir/src/EventAction.cc.i
+.PHONY : src/EventAction.cc.i
+
+src/EventAction.s: src/EventAction.cc.s
+.PHONY : src/EventAction.s
+
+# target to generate assembly for a file
+src/EventAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal.dir/build.make CMakeFiles/minimal.dir/src/EventAction.cc.s
+.PHONY : src/EventAction.cc.s
+
 src/PrimaryGeneratorAction.o: src/PrimaryGeneratorAction.cc.o
 .PHONY : src/PrimaryGeneratorAction.o
 
@@ -245,6 +269,30 @@ src/PrimaryGeneratorAction.s: src/PrimaryGeneratorAction.cc.s
 src/PrimaryGeneratorAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal.dir/build.make CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.s
 .PHONY : src/PrimaryGeneratorAction.cc.s
+
+src/RunAction.o: src/RunAction.cc.o
+.PHONY : src/RunAction.o
+
+# target to build an object file
+src/RunAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal.dir/build.make CMakeFiles/minimal.dir/src/RunAction.cc.o
+.PHONY : src/RunAction.cc.o
+
+src/RunAction.i: src/RunAction.cc.i
+.PHONY : src/RunAction.i
+
+# target to preprocess a source file
+src/RunAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal.dir/build.make CMakeFiles/minimal.dir/src/RunAction.cc.i
+.PHONY : src/RunAction.cc.i
+
+src/RunAction.s: src/RunAction.cc.s
+.PHONY : src/RunAction.s
+
+# target to generate assembly for a file
+src/RunAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal.dir/build.make CMakeFiles/minimal.dir/src/RunAction.cc.s
+.PHONY : src/RunAction.cc.s
 
 src/UserActionInitialization.o: src/UserActionInitialization.cc.o
 .PHONY : src/UserActionInitialization.o
@@ -289,9 +337,15 @@ help:
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
+	@echo "... src/EventAction.o"
+	@echo "... src/EventAction.i"
+	@echo "... src/EventAction.s"
 	@echo "... src/PrimaryGeneratorAction.o"
 	@echo "... src/PrimaryGeneratorAction.i"
 	@echo "... src/PrimaryGeneratorAction.s"
+	@echo "... src/RunAction.o"
+	@echo "... src/RunAction.i"
+	@echo "... src/RunAction.s"
 	@echo "... src/UserActionInitialization.o"
 	@echo "... src/UserActionInitialization.i"
 	@echo "... src/UserActionInitialization.s"

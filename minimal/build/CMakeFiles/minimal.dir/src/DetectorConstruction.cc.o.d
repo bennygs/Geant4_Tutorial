@@ -1,6 +1,6 @@
 CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o: \
-  /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/DetectorConstruction.cc \
-  /Users/bennyblues/Documents/Geant4_Tutorial/minimal/include/DetectorConstruction.hh \
+  /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/DetectorConstruction.cc \
+  /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/include/DetectorConstruction.hh \
   /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
   /usr/local/include/Geant4/globals.hh \
   /usr/local/include/Geant4/G4ios.hh \
@@ -524,8 +524,22 @@ CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o: \
   /usr/local/include/Geant4/G4Paraboloid.hh \
   /usr/local/include/Geant4/G4Paraboloid.icc \
   /usr/local/include/Geant4/G4PVPlacement.hh \
+  /usr/local/include/Geant4/G4PVReplica.hh \
   /usr/local/include/Geant4/G4SystemOfUnits.hh \
   /usr/local/include/Geant4/G4PhysicalConstants.hh \
+  /usr/local/include/Geant4/G4AutoDelete.hh \
+  /usr/local/include/Geant4/G4ThreadLocalSingleton.hh \
+  /usr/local/include/Geant4/G4Cache.hh \
+  /usr/local/include/Geant4/G4CacheDetails.hh \
+  /usr/local/include/Geant4/G4SDManager.hh \
+  /usr/local/include/Geant4/G4SDStructure.hh \
+  /usr/local/include/Geant4/G4VSensitiveDetector.hh \
+  /usr/local/include/Geant4/G4VHit.hh \
+  /usr/local/include/Geant4/G4VReadOutGeometry.hh \
+  /usr/local/include/Geant4/G4SensitiveVolumeList.hh \
+  /usr/local/include/Geant4/G4CollectionNameVector.hh \
+  /usr/local/include/Geant4/G4VSDFilter.hh \
+  /usr/local/include/Geant4/G4HCtable.hh \
   /usr/local/include/Geant4/G4GeometryManager.hh \
   /usr/local/include/Geant4/G4SmartVoxelStat.hh \
   /usr/local/include/Geant4/G4PhysicalVolumeStore.hh \
@@ -533,6 +547,16 @@ CMakeFiles/minimal.dir/src/DetectorConstruction.cc.o: \
   /usr/local/include/Geant4/G4VNotifier.hh \
   /usr/local/include/Geant4/G4LogicalVolumeStore.hh \
   /usr/local/include/Geant4/G4SolidStore.hh \
+  /usr/local/include/Geant4/G4SDChargedFilter.hh \
+  /usr/local/include/Geant4/G4MultiFunctionalDetector.hh \
+  /usr/local/include/Geant4/G4VPrimitiveScorer.hh \
+  /usr/local/include/Geant4/G4PSEnergyDeposit.hh \
+  /usr/local/include/Geant4/G4VPrimitivePlotter.hh \
+  /usr/local/include/Geant4/G4THitsMap.hh \
+  /usr/local/include/Geant4/G4THitsCollection.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/unordered_map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__hash_table \
+  /usr/local/include/Geant4/G4PSTrackLength.hh \
   /usr/local/include/Geant4/G4VisAttributes.hh \
   /usr/local/include/Geant4/graphics_reps_defs.hh \
   /usr/local/include/Geant4/G4Colour.hh \

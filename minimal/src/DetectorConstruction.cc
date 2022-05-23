@@ -38,16 +38,24 @@
 #include "G4Paraboloid.hh"
 #include "G4LogicalVolume.hh"
 #include "G4PVPlacement.hh"
+#include "G4PVReplica.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4PhysicalConstants.hh"
+#include "G4AutoDelete.hh"
 
 #include "G4RotationMatrix.hh"
 #include "G4ThreeVector.hh"
 
+#include "G4SDManager.hh"
 #include "G4GeometryManager.hh"
 #include "G4PhysicalVolumeStore.hh"
 #include "G4LogicalVolumeStore.hh"
 #include "G4SolidStore.hh"
+#include "G4SDChargedFilter.hh"
+#include "G4MultiFunctionalDetector.hh"
+#include "G4VPrimitiveScorer.hh"
+#include "G4PSEnergyDeposit.hh"
+#include "G4PSTrackLength.hh"
 
 #include "G4VisAttributes.hh"
 #include "G4Colour.hh"
@@ -55,7 +63,10 @@
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-DetectorConstruction::DetectorConstruction(){}
+DetectorConstruction::DetectorConstruction()
+: G4VUserDetectorConstruction(),
+  fCheckOverlaps(true)
+  {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo.....
 
@@ -124,7 +135,7 @@ G4Material* Ge_mat = G4NistManager::Instance()->FindOrBuildMaterial("G4_Ge");
 
     G4LogicalVolume* cryLogic = new G4LogicalVolume(crySolid,   //its solid
                                                     Ge_mat,     //its material
-                                                    "cry");     //its name
+                                                    "cryLV");     //its name
 
 
 
@@ -147,13 +158,13 @@ G4Material* Ge_mat = G4NistManager::Instance()->FindOrBuildMaterial("G4_Ge");
                                         r_0*sin(tetha)*sin(phi),
                                         r_0*cos(phi) );
 
-  G4PVPlacement* cryPhysical = new G4PVPlacement( myRotationMatrix,             //no rotation
-                                                  posCry,         //at (0,0,0)
-                                                  cryLogic,                //its logical volume
-                                                  "cry",              //its name
-                                                  worldLogic,              //its mother  volume
-                                                  false,                   //no boolean operation
-                                                  0);                       //copy number
+  new G4PVPlacement(  myRotationMatrix,             //no rotation
+                      posCry,         //at (0,0,0)
+                      cryLogic,                //its logical volume
+                      "cry",              //its name
+                      worldLogic,              //its mother  volume
+                      false,                   //no boolean operation
+                      0);                       //copy number
 
 
 
@@ -167,7 +178,27 @@ G4Material* Ge_mat = G4NistManager::Instance()->FindOrBuildMaterial("G4_Ge");
 void DetectorConstruction::ConstructSDandField(){
 
     //** TODO: Insert the sensitive detectors (SD) here **//
+    //
+    // Scorers
+    //
 
+    // declare Absorber as a MultiFunctionalDetector scorer
+    //
+    G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
+
+    auto cryDetector = new G4MultiFunctionalDetector("Crystal");
+    G4SDManager::GetSDMpointer()->AddNewDetector(cryDetector);
+
+    G4VPrimitiveScorer* primitive;
+    primitive = new G4PSEnergyDeposit("Edep");
+    cryDetector->RegisterPrimitive(primitive);
+
+    primitive = new G4PSTrackLength("TrackLength");
+    auto charged = new G4SDChargedFilter("chargedFilter");
+    primitive ->SetFilter(charged);
+    cryDetector->RegisterPrimitive(primitive);
+
+    SetSensitiveDetector("cryLV",cryDetector);
     //***********//
 }
 

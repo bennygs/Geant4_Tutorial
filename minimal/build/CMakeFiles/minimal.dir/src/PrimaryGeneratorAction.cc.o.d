@@ -1,6 +1,6 @@
 CMakeFiles/minimal.dir/src/PrimaryGeneratorAction.cc.o: \
-  /Users/bennyblues/Documents/Geant4_Tutorial/minimal/src/PrimaryGeneratorAction.cc \
-  /Users/bennyblues/Documents/Geant4_Tutorial/minimal/include/PrimaryGeneratorAction.hh \
+  /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/src/PrimaryGeneratorAction.cc \
+  /Users/bennyblues/Documents/Geant4_Tutorial/Geant4_Tutorial/minimal/include/PrimaryGeneratorAction.hh \
   /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
   /usr/local/include/Geant4/globals.hh \
   /usr/local/include/Geant4/G4ios.hh \

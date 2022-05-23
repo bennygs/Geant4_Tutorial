@@ -116,7 +116,7 @@ G4Material* Ge_mat = G4NistManager::Instance()->FindOrBuildMaterial("G4_Ge");
 
     //** TODO: Insert the detector geometry here **//
 
-    G4double crySize_z    =  5.*cm;
+    G4double crySize_z    =  1.*cm;
     G4double crySize_mDz  =  18.*cm;
     G4double crySize_pDz  =  20.*cm;
 

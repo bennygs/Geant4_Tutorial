@@ -53,17 +53,23 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
 	//defining a GPS (it is used in batch mode)
   //  fGPS = new G4GeneralParticleSource();
 
+
+// Definition of a 60Co source
+
+// Gamma 1.173228 MeV
   G4int n_particle = 1;
   fParticleGun  = new G4ParticleGun(n_particle);
 
-  // default particle kinematic
-  G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
-  G4String particleName;
-  G4ParticleDefinition* particle
-    = particleTable->FindParticle(particleName="gamma");
-  fParticleGun->SetParticleDefinition(particle);
+  G4double size_x = 5.*cm;
+  G4double size_y = 5.*cm;
+  G4double size_z = 5.*cm;
 
-  fParticleGun->SetParticleEnergy(4.*MeV);
+  G4double x0 = size_x * G4UniformRand();
+  G4double y0 = size_y * G4UniformRand();
+  G4double z0 = size_z * G4UniformRand();
+
+  fParticleGun->SetParticlePosition(G4ThreeVector(x0,y0,z0));
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -78,26 +84,43 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
+
+  //  G4double mom_x = 1.-2.*G4UniformRand();
+  //  G4double mom_y = 1.-2.*G4UniformRand();
+  //  G4double mom_z = 1.-2.*G4UniformRand();
+
+  G4double mom_x =1.;
+  G4double mom_y =1.;
+  G4double mom_z =1.;
+
+// First gamma
+G4double E_1 = 1.173228 * MeV;
+
+// Second gamma
+G4double E_2 =  1.332492 * MeV;
+
+
 	//fGPS->GeneratePrimaryVertex(anEvent);
 
-
-  G4double size_x = 5.*cm;
-  G4double size_y = 5.*cm;
-  G4double size_z = 5.*cm;
-
-  G4double x0 = size_x * G4UniformRand();
-  G4double y0 = size_y * G4UniformRand();
-  G4double z0 = size_z * G4UniformRand();
-
-  G4double mom_x = 1.-2.*G4UniformRand();
-  G4double mom_y = 1.-2.*G4UniformRand();
-  G4double mom_z = 1.-2.*G4UniformRand();
-
+  // default particle kinematic
+  G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
+  G4String particleName_1;
+  G4ParticleDefinition* gamma_1
+    = particleTable->FindParticle(particleName_1="gamma");
+  fParticleGun->SetParticleDefinition(gamma_1);
+  fParticleGun->SetParticleEnergy(E_1);
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(mom_x,mom_y,mom_z));
-
-  fParticleGun->SetParticlePosition(G4ThreeVector(x0,y0,z0));
-
   fParticleGun->GeneratePrimaryVertex(anEvent);
+
+
+    // default particle kinematic
+    G4String particleName_2;
+    G4ParticleDefinition* gamma_2
+      = particleTable->FindParticle(particleName_2="gamma");
+    fParticleGun->SetParticleDefinition(gamma_2);
+    fParticleGun->SetParticleEnergy(E_2);
+    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(mom_x,mom_y,mom_z));
+    fParticleGun->GeneratePrimaryVertex(anEvent);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

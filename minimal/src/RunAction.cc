@@ -60,8 +60,8 @@ RunAction::RunAction()
   //
 
   // Creating histograms
-  analysisManager->CreateH1("E_cry","Edep in crystal", 100, 0., 800*MeV);
-  analysisManager->CreateH1("L_cry","trackL in crystal", 100, 0., 1*m);
+  analysisManager->CreateH1("E_cry","Edep in crystal", 100, 0., 1.5*MeV);
+  analysisManager->CreateH1("L_cry","trackL in crystal", 100, 0., 2*mm);
 
   // Creating ntuple
   //
@@ -90,7 +90,7 @@ void RunAction::BeginOfRunAction(const G4Run* /*run*/)
 
   // Open an output file
   //
-  G4String fileName = "minimal";
+  G4String fileName = "crystal";
   analysisManager->OpenFile(fileName);
 }
 

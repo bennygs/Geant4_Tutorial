@@ -65,7 +65,7 @@ RunAction::RunAction()
 
   // Creating ntuple
   //
-  analysisManager->CreateNtuple("minimal", "Edep and TrackL");
+  analysisManager->CreateNtuple("crystal", "Edep and TrackL");
   analysisManager->CreateNtupleDColumn("E_cry");
   analysisManager->CreateNtupleDColumn("L_cry");
   analysisManager->FinishNtuple();

@@ -94,10 +94,10 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   G4double mom_z =1.;
 
 // First gamma
-G4double E_1 = 1.173228 * MeV;
+G4double E_1 = G4RandGauss::shoot( 1173.228, 2 ) * keV;
 
 // Second gamma
-G4double E_2 =  1.332492 * MeV;
+G4double E_2 = G4RandGauss::shoot( 1332.492, 2 ) * keV;
 
 
 	//fGPS->GeneratePrimaryVertex(anEvent);

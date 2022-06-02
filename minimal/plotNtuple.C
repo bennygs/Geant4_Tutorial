@@ -20,7 +20,7 @@
   TNtuple* ntuple = (TNtuple*)f.Get("crystal");
 
   // Draw Eabs histogram in the pad 1
-  ntuple->Draw("E_cry");
+  ntuple->Draw("E_cry", "", "", 10000);
 
   // Create a canvas for the tracking
   TCanvas* c2 = new TCanvas("c2", "", 20, 20, 1000, 1000);

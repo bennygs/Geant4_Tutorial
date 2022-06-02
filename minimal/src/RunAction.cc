@@ -59,8 +59,10 @@ RunAction::RunAction()
   // Book histograms, ntuple
   //
 
+
   // Creating histograms
-  analysisManager->CreateH1("E_cry","Edep in crystal", 100, 0., 1.5*MeV);
+
+  analysisManager->CreateH1("E_cry","Edep in crystal", 3000, 0., 3000*keV);
   analysisManager->CreateH1("L_cry","trackL in crystal", 100, 0., 2*mm);
 
   // Creating ntuple
@@ -69,6 +71,7 @@ RunAction::RunAction()
   analysisManager->CreateNtupleDColumn("E_cry");
   analysisManager->CreateNtupleDColumn("L_cry");
   analysisManager->FinishNtuple();
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

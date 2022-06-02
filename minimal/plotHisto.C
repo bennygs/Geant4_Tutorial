@@ -21,10 +21,10 @@
   hist1->Draw("HIST");
 
   // Create a canvas and divide it into 2x2 pads
-  TCanvas* c2 = new TCanvas("c2", "", 20, 20, 1000, 1000);
+  //TCanvas* c2 = new TCanvas("c2", "", 20, 20, 1000, 1000);
 
   // Draw Labs histogram in the pad 2
-  TH1D* hist2 = (TH1D*)f.Get("L_cry");
-  hist2->Draw("HIST");
+  //TH1D* hist2 = (TH1D*)f.Get("L_cry");
+  //hist2->Draw("HIST");
 
 }

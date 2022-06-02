@@ -60,16 +60,6 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   G4int n_particle = 1;
   fParticleGun  = new G4ParticleGun(n_particle);
 
-  G4double size_x = 5.*cm;
-  G4double size_y = 5.*cm;
-  G4double size_z = 5.*cm;
-
-  G4double x0 = size_x * G4UniformRand();
-  G4double y0 = size_y * G4UniformRand();
-  G4double z0 = size_z * G4UniformRand();
-
-  fParticleGun->SetParticlePosition(G4ThreeVector(x0,y0,z0));
-
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -95,12 +85,24 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
 // First gamma
 G4double E_1 = G4RandGauss::shoot( 1173.228, 2 ) * keV;
+//G4double E_1 = 1173.228 * keV;
 
 // Second gamma
 G4double E_2 = G4RandGauss::shoot( 1332.492, 2 ) * keV;
+//G4double E_2 = 1332.492 * keV;
 
 
 	//fGPS->GeneratePrimaryVertex(anEvent);
+
+  G4double size_x = 5.*cm;
+  G4double size_y = 5.*cm;
+  G4double size_z = 5.*cm;
+
+  G4double x0 = size_x * (0.5-1.*G4UniformRand());
+  G4double y0 = size_y * (0.5-1.*G4UniformRand());
+  G4double z0 = size_z * (0.5-1.*G4UniformRand());
+
+
 
   // default particle kinematic
   G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
@@ -108,6 +110,7 @@ G4double E_2 = G4RandGauss::shoot( 1332.492, 2 ) * keV;
   G4ParticleDefinition* gamma_1
     = particleTable->FindParticle(particleName_1="gamma");
   fParticleGun->SetParticleDefinition(gamma_1);
+  fParticleGun->SetParticlePosition(G4ThreeVector(x0,y0,z0));
   fParticleGun->SetParticleEnergy(E_1);
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(mom_x,mom_y,mom_z));
   fParticleGun->GeneratePrimaryVertex(anEvent);
@@ -118,6 +121,7 @@ G4double E_2 = G4RandGauss::shoot( 1332.492, 2 ) * keV;
     G4ParticleDefinition* gamma_2
       = particleTable->FindParticle(particleName_2="gamma");
     fParticleGun->SetParticleDefinition(gamma_2);
+    fParticleGun->SetParticlePosition(G4ThreeVector(x0,y0,z0));
     fParticleGun->SetParticleEnergy(E_2);
     fParticleGun->SetParticleMomentumDirection(G4ThreeVector(mom_x,mom_y,mom_z));
     fParticleGun->GeneratePrimaryVertex(anEvent);
